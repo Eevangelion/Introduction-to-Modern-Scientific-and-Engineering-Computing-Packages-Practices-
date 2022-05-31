@@ -21,3 +21,7 @@ print(df.columns)
 print(df.describe())
 for col in categorical:
     print(col, ':', df[col].unique())
+
+sns.displot(x='episodes', data=df)
+sns.displot(x='rating', data=df)
+plt.show()
